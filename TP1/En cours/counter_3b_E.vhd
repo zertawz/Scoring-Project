@@ -36,7 +36,7 @@ entity counter_3b_E is
 end counter_3b_E;
 
 architecture Behavioral of counter_3b_E is
-signal Q_Int : unsigned(2 downto 0);
+signal Q_Int : unsigned(2 downto 0):= "000";
 
 begin
 
@@ -44,12 +44,11 @@ proc : process(clk,CE)
 begin
 if(rising_edge(clk) and CE = '1' and Q_int = "111") then
 	Q_int<="000";
-	Q<=STD_LOGIC_VECTOR(Q_int);
 elsif(rising_edge(clk) and CE = '1') then
-	Q_int <= Q_int + "001";
-	Q <= STD_LOGIC_VECTOR(Q_int);
+	Q_int <= Q_int + 1;
 	end if;
 
 end process proc;
+Q<=STD_LOGIC_VECTOR(Q_int);
 end Behavioral;
 

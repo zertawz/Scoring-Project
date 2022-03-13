@@ -1,1 +1,1 @@
-counter_3b_E et son test bench ne sont pas fonctionnels
+tout est fonctionnel

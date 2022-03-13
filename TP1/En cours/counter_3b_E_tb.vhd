@@ -87,9 +87,9 @@ BEGIN
 
       -- insert stimulus here
 CE <= '1',
-		'0' after 100 ns,
-		'1' after 200 ns,
-		'0' after 300 ns;		
+		'0' after 50 ns,
+		'1' after 100 ns,
+		'0' after 150 ns;		
 
       wait;
    end process;
