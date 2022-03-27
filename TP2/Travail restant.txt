@@ -1,6 +1,0 @@
-register_1b (vhd)
-
-fichier top
--sous bloc chronometer (assembler top)
--sous bloc score (a assembler)
--chronoscore phase 2 (gros bloc à assembler)

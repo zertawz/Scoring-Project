@@ -112,6 +112,7 @@ signal segs_data : std_logic_vector(3 downto 0);
 signal sseg_7 : std_logic_vector(6 downto 0);
 signal sseg : std_logic_vector(7 downto 0);
 
+
 begin
 
 U0: counter_3b_E PORT MAP (
@@ -174,7 +175,8 @@ U7: register_8b PORT MAP (
           clk => clk,
           D => sseg,
           Q => LEDS
-        );
+      );
+		 
 
 end Behavioral;
 
